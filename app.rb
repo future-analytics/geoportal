@@ -124,6 +124,8 @@ helpers do
 
 end
 
+set :bind, '0.0.0.0'
+
 get '/' do
   erb :index
 end
@@ -169,7 +171,7 @@ get '/items/:id/?' do
 
   # TODO: refactor to Item object
   @workspace =  /(.*)\:/.match(@doc.layers.first)[1]
-  @service_base = SiteConfig.geoserver_url + "/" + @workspace 
+  @service_base = SiteConfig.geoserver_url + "/" + @workspace
 
   # Yeah...the view
   erb :item
