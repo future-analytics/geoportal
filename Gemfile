@@ -5,6 +5,7 @@ source "https://rubygems.org"
 gem "sinatra", "~>1.4.5"
 gem "sinatra-contrib", "~>1.4.2"
 gem "foreman", "~> 0.62"
+gem "compass"
 #gem "rgeoserver"
 #gem "dotenv"
 
